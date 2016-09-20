@@ -11,5 +11,5 @@ public abstract class BaseTest {
         return driver;
     }
 
-    public Page getCurrentPage
+    public Page getCurrentPageaa
 }
