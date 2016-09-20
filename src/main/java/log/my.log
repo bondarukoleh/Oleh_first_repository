@@ -1,0 +1,90 @@
+2016-20-09 22:24:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-20-09 22:24:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Enter clicked
+2016-20-09 22:24:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-20-09 22:24:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-20-09 22:24:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-20-09 22:24:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Got text from UserNam
+2016-20-09 22:24:52  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Some trouble with shuting browser org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '172.22.62.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 0283d81e-3689-4166-ab4b-30bb9289abb3
+2016-20-09 22:28:16   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-20-09 22:28:16   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Enter clicked
+2016-20-09 22:28:17   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-20-09 22:28:17   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-20-09 22:28:17   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-20-09 22:28:17   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Poisk link clicked
+2016-20-09 22:28:47  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Error s Checkboxom Proxy element for: DefaultElementLocator 'By.xpath: .//*[@id='mailrusearchonpage']', ne nashlo navernoe, vot takoy error org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@id='mailrusearchonpage'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.11 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '172.22.62.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f3228d5-b42d-4fb4-a267-77f4937c01e8
+*** Element info: {Using=xpath, value=.//*[@id='mailrusearchonpage']}
+2016-20-09 22:29:02  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Song isn't inserted org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@id='search-form-query'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.10 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '172.22.62.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f3228d5-b42d-4fb4-a267-77f4937c01e8
+*** Element info: {Using=xpath, value=.//*[@id='search-form-query']}
+2016-20-09 22:29:17  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Error with Iskat Button org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@id='search-form']//button (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 15.08 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '172.22.62.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f3228d5-b42d-4fb4-a267-77f4937c01e8
+*** Element info: {Using=xpath, value=.//*[@id='search-form']//button}
+2016-20-09 22:29:27  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Error with Play First Button org.openqa.selenium.NoSuchElementException: Unable to locate element: .//*[@class='musicset-track clearfix'][1]//i[@class='musicset-player__icon'] (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 10.04 seconds
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '172.22.62.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f3228d5-b42d-4fb4-a267-77f4937c01e8
+*** Element info: {Using=xpath, value=.//*[@class='musicset-track clearfix'][1]//i[@class='musicset-player__icon']}
+2016-20-09 22:29:29  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Some trouble with shuting browser org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '172.22.62.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 3f3228d5-b42d-4fb4-a267-77f4937c01e8
+2016-20-09 22:30:23   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-20-09 22:30:23   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Enter clicked
+2016-20-09 22:30:23   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-20-09 22:30:24   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-20-09 22:30:24   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-20-09 22:30:24   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Got text from UserNam
+2016-20-09 22:41:27   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-20-09 22:41:27   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Enter clicked
+2016-20-09 22:41:27   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-20-09 22:41:27   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-20-09 22:41:27   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-20-09 22:41:27   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Poisk link clicked
+2016-20-09 22:41:52  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Some trouble with shuting browser org.openqa.selenium.remote.UnreachableBrowserException: Error communicating with the remote browser. It may have died.
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '172.22.62.28', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: RemoteWebDriver
+Capabilities [{rotatable=false, raisesAccessibilityExceptions=false, appBuildId=20160823121617, version=, platform=XP, proxy={}, command_id=1, specificationLevel=0, acceptSslCerts=false, browserVersion=48.0.2, platformVersion=10.0, XULappId={ec8030f7-c20a-464f-9b0e-13a3a9e97384}, browserName=Firefox, takesScreenshot=true, takesElementScreenshot=true, platformName=Windows_NT, device=desktop}]
+Session ID: 83992924-b6aa-4d89-856d-9eda64505002
+2016-20-09 22:46:49   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-20-09 22:46:49   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Enter clicked
+2016-20-09 22:46:49   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-20-09 22:46:49   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-20-09 22:46:49   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-20-09 22:46:49   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Got text from UserNam
+2016-20-09 22:56:26   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-20-09 22:56:26   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Enter clicked
+2016-20-09 22:56:26   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-20-09 22:56:26   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-20-09 22:56:26   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-20-09 22:56:26   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Got text from UserNam

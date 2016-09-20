@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: ZaycevMaven.ZaycevMavenProject.Search_Test
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 40.669 sec - in ZaycevMaven.ZaycevMavenProject.Search_Test
