@@ -1,15 +1,31 @@
 package ZaycevMaven.ZaycevMavenProject;
 
+import org.junit.After;
+import org.junit.Before;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
 public abstract class BaseTest {
+    WebDriver driver;
+    ZaycevHomePage zaycevHomePage;
+    ZaycevSearchingPage zaycevSearchingPage;
+    ZaycevBadCredentialsPage zaycevBadCredentialsPage;
+    AcdcPage acdcPage;
 
-    public WebDriver getFFdriver(){
-        System.setProperty("webdriver.gecko.driver", ".\\src\\libs\\geckodriver.exe");
-        WebDriver driver = new FirefoxDriver();
-        return driver;
+    @Before
+    public void setUp(){
+        driver = getDriver("Chrome");
+        zaycevHomePage = new ZaycevHomePage(driver);
+        zaycevSearchingPage = new ZaycevSearchingPage(driver);
     }
 
-    public Page getCurrentPageaa
+    @After
+    public void tearDown(){
+        driver.manage().deleteAllCookies();
+        zaycevHomePage.closeBrowser();
+    }
+
+    public WebDriver getDriver(String driverName){
+        WebDriver driver = BrowserFactory.getBrowser(driverName);
+        return driver;
+    }
 }

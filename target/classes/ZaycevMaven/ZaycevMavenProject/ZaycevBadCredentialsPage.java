@@ -1,24 +1,17 @@
 package ZaycevMaven.ZaycevMavenProject;
 
-import org.apache.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class ZaycevBadCredentialsPage {
-	
-	@FindBy(xpath="//div[@class='row row_registration authentication__field authentication_login clearfix login-social-place-page bad']//div[@class='field-error-msg']")
+public class ZaycevBadCredentialsPage extends BasePage {
+
+	@FindBy(xpath="//div[@class='row row_registration authentication__field authentication_login clearfix " +
+			"login-social-place-page bad']//div[@class='field-error-msg']")
 	WebElement invalidCredentionals;
-	
-	Logger log;
-    WebDriver driver;
-	
 
 	public ZaycevBadCredentialsPage(WebDriver driver) {
-		this.driver = driver;
-		log = Logger.getLogger(getClass());
-		PageFactory.initElements(driver, this);
+		super(driver);
 	}
 
 	public String checkBadCredentialsMessage() {

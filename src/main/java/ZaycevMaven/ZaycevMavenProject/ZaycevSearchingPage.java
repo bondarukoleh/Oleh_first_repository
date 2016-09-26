@@ -54,21 +54,6 @@ public class ZaycevSearchingPage {
 		}
 	}
 
-	public void unchekMailChekbox(){
-		try{
-		if (checkboxMailRu.isSelected()){
-			checkboxMailRu.click();
-			log.info("Checkboxu "+checkboxMailRu+" snyli vidilenie");
-		}
-		else {
-			log.info("Checkbox "+checkboxMailRu+" i tak ne vibran, snimat' vidilenie ne nuzno");
-   		}
-		}
-		catch (Exception e){
-			log.error("Error s Checkboxom "+checkboxMailRu+", ne nashlo navernoe, vot takoy error "+e);
-		}
-	}
-
 	public void clickOnIskat() {
 		try {
 			iskatButton.click();

@@ -1,32 +1,9 @@
 package ZaycevMaven.ZaycevMavenProject;
 
 import static org.junit.Assert.*;
-import org.junit.After;
-import org.junit.Before;
 import org.junit.Test;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 
-public class AbilityToDownloadSong_Test {
-	
-	WebDriver driver;
-	ZaycevHomePage zaycevHomePage;
-	ZaycevSearchingPage zaycevSearchingPage;
-	AcdcPage acdcPage;
-	
-	
-	@Before
-	public void setUp(){
-		System.setProperty("webdriver.gecko.driver", ".\\src\\libs\\geckodriver.exe");
-		driver = new FirefoxDriver();
-		zaycevHomePage = new ZaycevHomePage(driver);
-		zaycevSearchingPage = new ZaycevSearchingPage(driver);
-	}
-	
-	@After
-	public void tearDown(){
-		zaycevHomePage.closeBrowser();
-	}
+public class AbilityToDownloadSong_Test extends BaseTest{
 	
 	@Test
 	public void testAbilityToDownloadSong(){
