@@ -1,10 +1,12 @@
 package ZaycevMaven.ZaycevMavenProject.ZaycevBlocks;
 
+import com.sun.xml.internal.ws.handler.HandlerException;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Button;
 import ru.yandex.qatools.htmlelements.element.HtmlElement;
 import ru.yandex.qatools.htmlelements.element.TextInput;
+import ru.yandex.qatools.htmlelements.exceptions.HtmlElementsException;
 
 @Name("Zaycev Header")
 @FindBy(xpath = "//div[@id='page-head']")
@@ -31,23 +33,23 @@ public class ZaycevHeader extends HtmlElement{
     protected HtmlElement loggedUserName;
 
 
-    public void clickLoginButton() {
+    public void clickLoginButton() throws HtmlElementsException{
         loginButton.click();
     }
 
-    public void enterUserEmail(String userName) {
+    public void enterUserEmail(String userName) throws HtmlElementsException {
         userEmaiInput.sendKeys(userName);
     }
 
-    public void enterUserPassword(String userPass) {
+    public void enterUserPassword(String userPass) throws HtmlElementsException {
         userPasswordInput.sendKeys(userPass);
     }
 
-    public void clickEnterButton() {
+    public void clickEnterButton() throws HtmlElementsException {
         enterButton.click();
     }
 
-    public String getLoggedUserName() {
+    public String getLoggedUserName() throws HtmlElementsException {
         return loggedUserName.getText();
     }
 

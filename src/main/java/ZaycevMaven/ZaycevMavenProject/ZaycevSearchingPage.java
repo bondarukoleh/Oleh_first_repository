@@ -2,61 +2,29 @@ package ZaycevMaven.ZaycevMavenProject;
 
 import java.util.Set;
 import java.util.concurrent.TimeUnit;
-
-import org.apache.log4j.Logger;
+import ZaycevMaven.ZaycevMavenProject.ZaycevBlocks.SearchBlock;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
  
-public class ZaycevSearchingPage {
-	
-	Logger log;
-    WebDriver driver;
-    Actions actions;
-    
-    @FindBy(xpath =".//*[@id='search-form-query']")
-    WebElement fieldPoisk;
-    
-    @FindBy(xpath =".//*[@id='mailrusearchonpage']")
-    WebElement checkboxMailRu;
-    
-    @FindBy(xpath =".//*[@id='search-form']//button")
-    WebElement iskatButton;
-    
-    @FindBy(xpath ="//div[@class='musicset-track clearfix'][1]//div[@class='musicset-track__artist']/a")
-    WebElement pervajaPesna;
-    
-    @FindBy(xpath =".//*[@class='musicset-track clearfix'][1]//i[@class='musicset-player__icon']")
-    WebElement playFirstSong;
-    
-    @FindBy(xpath =".//*[@class='musicset-track clearfix'][1]//i[@class='musicset-icon musicset-icon_download']")
-    WebElement downloadFirstSong;
-    
-    @FindBy(xpath =".//div[@class='musicset-progress__gap']")
-    WebElement playingFirstSongProgress;
-   
+public class ZaycevSearchingPage extends BasePage{
+
+	SearchBlock searchBlock;
     
     public ZaycevSearchingPage(WebDriver driver){
-    	this.driver = driver;
-    	log = Logger.getLogger(getClass());
-    	PageFactory.initElements(driver, this);
-    	actions = new Actions(driver);
+    	super(driver);
     }
 
 	public void insertValueInPoiskFiels(String songValue) {
 		try {
-			fieldPoisk.click();
-			fieldPoisk.sendKeys(songValue);
-		} catch (Exception e) {
+			searchBlock.allocateSerchInput();
+			searchBlock.insertInSearchInput(songValue);
+		} catch (Exception e){
 			log.error("Song isn't inserted "+e);
 		}
 	}
 
 	public void clickOnIskat() {
 		try {
-			iskatButton.click();
+			searchBlock.clickFindButton();
 			log.info("Iskat Button pressed");
 		} catch (Exception e) {
 			log.error("Error with Iskat Button "+e);
@@ -66,8 +34,8 @@ public class ZaycevSearchingPage {
 	public String checkFirstSong(){
 		try {
 			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
-			log.info("pervaja Pesna vzata");
-			return pervajaPesna.getText();
+			log.info("pervaja Pesna will be vzata");
+			return searchBlock.getFirstSongGroup();
 		} catch (Exception e) {
 			log.error("Error with pervaja Pesna "+e);
 			return null;
@@ -77,43 +45,14 @@ public class ZaycevSearchingPage {
 	public void clickPlayFirsSong() {
 		try {
 			driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-			playFirstSong.click();
+			searchBlock.clickPlayFirsSongButton();
 			log.info("Play First Song Button pressed");
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		} catch (Exception e) {
 			log.error("Error with Play First Button "+e);
 		}	
 	}
-	/**
-	public void clickDownloadFirsSong() {
-		try {
-			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
-			downloadFirstSong.click();
-			log.info("Download First Song Button pressed");
-		} catch (Exception e) {
-			log.error("Error with Download First Button "+e);
-		}	
-	}
-    */
-	
-	/**
-	public void clickDownloadFirsSongJS() {
-        
-	    try {
-			String script = "var object = arguments[0];"
-			        + "var theEvent = document.createEvent(\"MouseEvent\");"
-			        + "theEvent.initMouseEvent(\"click\", true, true, window, 0, 0, 0, 0, 0, false, false, false, false, 0, null);"
-			        + "object.dispatchEvent(theEvent);"
-			        ;
-			((JavascriptExecutor)driver).executeScript(script, downloadFirstSong);
-			log.info("Download First Song Button pressed");
-		} catch (Exception e) {
-			log.error("Error with Download First Button "+e);
-		}
-	}
-	*/
-	
-	
+
 	/** РАБОЧИЙ ПРОСТО ЧТО БЫ НИЧЕГО НЕ СЛОМАТЬ
 public void moveAndClickDownLoadButton() {
         
@@ -140,10 +79,9 @@ public void moveAndClickDownLoadButton() {
 public AcdcPage moveAndClickDownLoadButton() {
         
 	    try {
-	    	//actions.moveToElement(pervajaPesna).click().build().perform();
-	    	actions.moveToElement(pervajaPesna);
+	    	searchBlock.moveToFirstSongButton();
 			log.info("First Song highlighted");
-			actions.moveToElement(downloadFirstSong).click().perform();
+			searchBlock.clickDownloadFirstSongButton();
 			log.info("DownLoad first Song button clicked");
 			driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 			 Set<String> handles = driver.getWindowHandles();
@@ -162,7 +100,7 @@ public AcdcPage moveAndClickDownLoadButton() {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		boolean isSongPlaying;
 		try {
-			isSongPlaying = playingFirstSongProgress.isDisplayed();
+			isSongPlaying = searchBlock.checkPlayingFirstSongBar();
 			if(isSongPlaying){
 				log.info("First song is playinnig progress bar displayed");
 			}

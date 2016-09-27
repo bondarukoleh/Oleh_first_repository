@@ -1,40 +1,22 @@
 package ZaycevMaven.ZaycevMavenProject;
 
 import java.util.concurrent.TimeUnit;
-import org.apache.log4j.Logger;
+import ZaycevMaven.ZaycevMavenProject.ZaycevBlocks.SingeSongBlock;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.FindBy;
-import org.openqa.selenium.support.PageFactory;
 
-public class AcdcPage {
+public class AcdcPage extends BasePage{
 
-	WebDriver driver;
-	Logger log;
-	
-	@FindBy(xpath =".//div[@id='audiotrack-page']//a[@class='musicset-track__link link-without-title']")
-    WebElement checkSongName;
-	
-	@FindBy(xpath =".//*[@id='audiotrack-download-link']")
-    WebElement downloadSongButton;
+	SingeSongBlock singeSongBlock;
 	
 	public AcdcPage(WebDriver driver){
-		this.driver = driver;
-		log = Logger.getLogger(getClass());
-		PageFactory.initElements(driver, this);
+		super(driver);
 		}
 	
 	public String checkSongName(){
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 		try {
-			if (checkSongName.isDisplayed()) {
-				log.info("Got song name what we want to download");
-				return checkSongName.getText();
-			}
-			else{
-				log.info("Song name isn't displayed");
-				return null;
-			}
+				log.info("will get song group name which we want to download");
+				return singeSongBlock.getSongGroupName();
 		} catch (Exception e) {
 			log.error("Couldn't find song name what we want to download "+e);
 			return null;
@@ -43,7 +25,7 @@ public class AcdcPage {
 	
 	public boolean checkDownloadButtonEnable(){
 		try {
-			if (downloadSongButton.isEnabled()) {
+			if (singeSongBlock.downloadSongButtonIsEnabled()) {
 				log.info("Download button checked (Enabled)");
 				return true;
 			}

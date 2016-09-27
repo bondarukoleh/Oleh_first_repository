@@ -301,3 +301,58 @@ Session ID: 7d908f8990a69ae476a3bcd7e44671f4
 2016-27-09 00:03:43   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Play First Song Button pressed
 2016-27-09 00:03:43   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : First song is playinnig progress bar displayed
 2016-27-09 00:03:45   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Driver shuted down
+2016-28-09 01:27:31   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-28-09 01:27:31   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Login clicked
+2016-28-09 01:27:31   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-28-09 01:27:32   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-28-09 01:27:34   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-28-09 01:27:36   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Poisk link clicked
+2016-28-09 01:27:39   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Iskat Button pressed
+2016-28-09 01:27:39  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Error with Download First Button java.lang.NullPointerException
+2016-28-09 01:27:39   INFO [ZaycevMaven.ZaycevMavenProject.AcdcPage] : will get song group name which we want to download
+2016-28-09 01:27:55  ERROR [ZaycevMaven.ZaycevMavenProject.AcdcPage] : Couldn't find song name what we want to download org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+2016-28-09 01:27:56   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Driver shuted down
+2016-28-09 01:32:59   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-28-09 01:32:59   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Login clicked
+2016-28-09 01:32:59   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-28-09 01:32:59   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-28-09 01:33:01   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-28-09 01:33:04   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Poisk link clicked
+2016-28-09 01:33:08   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Iskat Button pressed
+2016-28-09 01:33:08  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Error with Download First Button java.lang.NullPointerException
+2016-28-09 01:33:08   INFO [ZaycevMaven.ZaycevMavenProject.AcdcPage] : will get song group name which we want to download
+2016-28-09 01:33:24  ERROR [ZaycevMaven.ZaycevMavenProject.AcdcPage] : Couldn't find song name what we want to download org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+2016-28-09 01:33:25   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Driver shuted down
+2016-28-09 01:37:58   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-28-09 01:37:58   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Login clicked
+2016-28-09 01:37:58   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-28-09 01:37:59   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-28-09 01:38:01   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-28-09 01:38:02   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Poisk link clicked
+2016-28-09 01:38:07   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Iskat Button pressed
+2016-28-09 01:38:07  ERROR [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Error with Download First Button java.lang.NullPointerException
+2016-28-09 01:38:07   INFO [ZaycevMaven.ZaycevMavenProject.AcdcPage] : will get song group name which we want to download
+2016-28-09 01:38:22  ERROR [ZaycevMaven.ZaycevMavenProject.AcdcPage] : Couldn't find song name what we want to download org.openqa.selenium.NoSuchElementException: Timed out after 5 seconds. Unable to locate the element
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: 'unknown', revision: 'c7b525d', time: '2016-09-01 14:57:44 -0700'
+System info: host: 'DESKTOP-8J5QEN7', ip: '192.168.1.150', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_101'
+Driver info: driver.version: unknown
+2016-28-09 01:38:24   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Driver shuted down
+2016-28-09 01:39:42   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Home page opened
+2016-28-09 01:39:43   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Button Login clicked
+2016-28-09 01:39:43   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Email entered
+2016-28-09 01:39:43   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Password entered
+2016-28-09 01:39:45   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Entry button Enter clicked
+2016-28-09 01:39:47   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Poisk link clicked
+2016-28-09 01:39:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Iskat Button pressed
+2016-28-09 01:39:50   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : Play First Song Button pressed
+2016-28-09 01:39:51   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevSearchingPage] : First song is playinnig progress bar displayed
+2016-28-09 01:39:52   INFO [ZaycevMaven.ZaycevMavenProject.ZaycevHomePage] : Driver shuted down

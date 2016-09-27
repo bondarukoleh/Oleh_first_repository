@@ -17,7 +17,7 @@ public class ZaycevHomePage extends BasePage{
 
 	public void openZaycevHomePage() {
 		try {
-			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			driver.get("http://zaycev.net/");
 			wait.until(ExpectedConditions.titleContains("Зайцев.нет!"));
 			log.info("Home page opened");

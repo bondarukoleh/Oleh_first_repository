@@ -13,7 +13,6 @@ public class AbilityToDownloadSong_Test extends BaseTest{
 		zaycevHomePage.enterPassword("532757575");
 		zaycevHomePage.clickEntryButton();
 		zaycevHomePage.clickOnPoiskLink();
-		zaycevSearchingPage.unchekMailChekbox();
 		zaycevSearchingPage.insertValueInPoiskFiels("Highway to hell");
 		zaycevSearchingPage.clickOnIskat();
 		acdcPage = zaycevSearchingPage.moveAndClickDownLoadButton();
