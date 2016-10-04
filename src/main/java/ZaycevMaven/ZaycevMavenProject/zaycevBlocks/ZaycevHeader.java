@@ -1,6 +1,5 @@
-package ZaycevMaven.ZaycevMavenProject.ZaycevBlocks;
+package ZaycevMaven.ZaycevMavenProject.zaycevBlocks;
 
-import com.sun.xml.internal.ws.handler.HandlerException;
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.htmlelements.annotations.Name;
 import ru.yandex.qatools.htmlelements.element.Button;

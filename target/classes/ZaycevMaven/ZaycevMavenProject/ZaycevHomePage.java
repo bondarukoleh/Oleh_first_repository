@@ -1,10 +1,12 @@
 package ZaycevMaven.ZaycevMavenProject;
 
-import java.util.concurrent.TimeUnit;
-import ZaycevMaven.ZaycevMavenProject.ZaycevBlocks.FunctionBlock;
-import ZaycevMaven.ZaycevMavenProject.ZaycevBlocks.ZaycevHeader;
+import ZaycevMaven.ZaycevMavenProject.zaycevBlocks.FunctionBlock;
+import ZaycevMaven.ZaycevMavenProject.zaycevBlocks.ZaycevHeader;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.ui.ExpectedConditions;
+
+import java.util.concurrent.TimeUnit;
+
 
 public class ZaycevHomePage extends BasePage{
 
@@ -17,7 +19,7 @@ public class ZaycevHomePage extends BasePage{
 
 	public void openZaycevHomePage() {
 		try {
-			//driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+			driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 			driver.get("http://zaycev.net/");
 			wait.until(ExpectedConditions.titleContains("Зайцев.нет!"));
 			log.info("Home page opened");

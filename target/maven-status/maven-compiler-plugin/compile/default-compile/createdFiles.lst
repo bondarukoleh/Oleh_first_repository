@@ -1,4 +1,10 @@
 ZaycevMaven\ZaycevMavenProject\ZaycevBadCredentialsPage.class
 ZaycevMaven\ZaycevMavenProject\ZaycevSearchingPage.class
+ZaycevMaven\ZaycevMavenProject\zaycevBlocks\ZaycevHeader.class
+ZaycevMaven\ZaycevMavenProject\zaycevBlocks\FunctionBlock.class
+ZaycevMaven\ZaycevMavenProject\BrowserFactory.class
+ZaycevMaven\ZaycevMavenProject\BasePage.class
+ZaycevMaven\ZaycevMavenProject\zaycevBlocks\SearchBlock.class
 ZaycevMaven\ZaycevMavenProject\AcdcPage.class
 ZaycevMaven\ZaycevMavenProject\ZaycevHomePage.class
+ZaycevMaven\ZaycevMavenProject\zaycevBlocks\SingeSongBlock.class

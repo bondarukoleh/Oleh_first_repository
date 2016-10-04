@@ -1,7 +1,7 @@
 package ZaycevMaven.ZaycevMavenProject;
 
 import java.util.concurrent.TimeUnit;
-import ZaycevMaven.ZaycevMavenProject.ZaycevBlocks.SingeSongBlock;
+import ZaycevMaven.ZaycevMavenProject.zaycevBlocks.SingeSongBlock;
 import org.openqa.selenium.WebDriver;
 
 public class AcdcPage extends BasePage{
@@ -38,4 +38,9 @@ public class AcdcPage extends BasePage{
 			return false;
 		}
 	}
+
+	public void clickOnPoisk(){
+		singeSongBlock.clickSearchAAA();
+	}
 }
+

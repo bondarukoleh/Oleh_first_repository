@@ -1,4 +1,4 @@
-package ZaycevMaven.ZaycevMavenProject.ZaycevBlocks;
+package ZaycevMaven.ZaycevMavenProject.zaycevBlocks;
 
 import org.openqa.selenium.support.FindBy;
 import ru.yandex.qatools.htmlelements.annotations.Name;
@@ -16,14 +16,23 @@ public class SingeSongBlock extends HtmlElement{
     protected Link songGroupName;
 
     @Name("Download Song Button")
-    @FindBy(xpath ="//a[@id='audiotrack-download-link']")
+    @FindBy(xpath ="//i[@class='audiotrack-icon audiotrack-icon_download']")
     protected Button downloadSongButton;
+
+    @Name("Search link")
+    @FindBy(xpath =".//*[@id='zina-region-leftmenutop']//li[1]/a")
+    protected Link searchLinkAAA;
+
 
     public String getSongGroupName() throws HtmlElementsException {
         return songGroupName.getText();
     }
 
     public boolean downloadSongButtonIsEnabled() throws HtmlElementsException {
-        return downloadSongButton.isEnabled();
+        return downloadSongButton.isDisplayed();
+    }
+
+    public void clickSearchAAA() throws HtmlElementsException {
+        searchLinkAAA.click();
     }
 }

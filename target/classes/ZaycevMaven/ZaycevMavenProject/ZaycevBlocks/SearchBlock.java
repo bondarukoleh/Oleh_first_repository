@@ -1,4 +1,4 @@
-package ZaycevMaven.ZaycevMavenProject.ZaycevBlocks;
+package ZaycevMaven.ZaycevMavenProject.zaycevBlocks;
 
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +12,6 @@ import ru.yandex.qatools.htmlelements.exceptions.HtmlElementsException;
 @Name("Zaycev Searching songs block")
 @FindBy(xpath = "//div[@class='search-page__precise search-precise clearfix']")
 public class SearchBlock extends HtmlElement{
-
     Actions actions;
 
     @Name("Search songs input")
@@ -31,6 +30,10 @@ public class SearchBlock extends HtmlElement{
     @FindBy(xpath =".//*[@class='musicset-track clearfix'][1]//i[@class='musicset-player__icon']")
     protected Button playFirstSong;
 
+    @Name("First song button web element")
+    @FindBy(xpath ="//div[@class='musicset-track clearfix'][1]//div[@class='musicset-track__title track-geo__title']")
+    protected HtmlElement firstSongElement;
+
     @Name("Dowload first song button")
     @FindBy(xpath =".//*[@class='musicset-track clearfix'][1]//i[@class='musicset-icon musicset-icon_download']")
     protected Button downloadFirstSong;
@@ -38,6 +41,10 @@ public class SearchBlock extends HtmlElement{
     @Name("Playing first song bar")
     @FindBy(xpath =".//div[@class='musicset-progress__gap']")
     protected HtmlElement playingFirstSongProgressBar;
+
+    @Name("Playing first song bar")
+    @FindBy(css =".musicset-track.clearfix.hover-bound.musicset-track_hover")
+    protected HtmlElement firstSongBar;
 
     public void allocateSerchInput() throws HtmlElementsException{
         searchInput.click();
@@ -51,7 +58,7 @@ public class SearchBlock extends HtmlElement{
         findButton.click();
     }
 
-    public String  getFirstSongGroup() throws HtmlElementsException {
+    public String getFirstSongGroup() throws HtmlElementsException {
         return firstSongGroup.getText();
     }
 
@@ -59,15 +66,17 @@ public class SearchBlock extends HtmlElement{
         playFirstSong.click();
     }
 
-    public void moveToFirstSongButton() throws HtmlElementsException {
-        actions.moveToElement(playFirstSong);
-    }
+    /**-------------------------------ЭТО КОШМАР, КАК ЭТО УЛУЧШИТЬ?----------------------------*/
 
-    public void clickDownloadFirstSongButton() throws HtmlElementsException {
-        downloadFirstSong.click();
+    public String getDownloadFirstSongButtonLocator() throws HtmlElementsException {
+        return ".//*[@class='musicset-track clearfix'][1]//i[@class='musicset-player__icon']";
     }
 
     public boolean checkPlayingFirstSongBar() throws HtmlElementsException {
         return playingFirstSongProgressBar.isDisplayed();
+    }
+
+    public void hoverOnFirstSong(){
+        actions.moveToElement(firstSongBar);
     }
 }
